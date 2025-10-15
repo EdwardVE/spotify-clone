@@ -31,7 +31,7 @@ export function Player() {
     }
   }, [currentMusic])
 
-
+console.log(currentMusic)
   const play = () => {
     audioRef.current.play()
       .catch((e) => console.log('error playing: ', e))

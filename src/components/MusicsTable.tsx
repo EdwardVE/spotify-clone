@@ -1,7 +1,7 @@
-import {type Song} from "@/lib/data"
-import {TimeIcon} from "@/icons/MusicsTableIcons"
-import {MusicsTablePlay} from "@/components/MusicsTablePlay"
-import {usePlayerStore} from "../store/playerStore";
+import {type Song} from "@/lib/data.ts"
+import {TimeIcon} from "@/icons/MusicsTableIcons.tsx"
+import {MusicsTablePlay} from "@/components/MusicsTablePlay.tsx"
+import {usePlayerStore} from "../store/playerStore.ts";
 
 interface Props {
   songs: Song[]

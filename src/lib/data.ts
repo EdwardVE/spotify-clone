@@ -1,4 +1,4 @@
-import { colors } from "./colors";
+import { colors } from "./colors.ts";
 
 export interface Playlist {
   id: string;
@@ -97,7 +97,7 @@ export const songs: Song[] = [
     "id": 1,
     "albumId": 1,
     "title": "Moonlit Walk",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
+    "image": `https://lofigirlshop.com/cdn/shop/files/3_186ce259-9fcd-43c0-8fcd-80f191227363_1200x1200.png?v=1750420350`,
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "2:57"
@@ -106,7 +106,7 @@ export const songs: Song[] = [
     "id": 2,
     "albumId": 1,
     "title": "Coffee Daze",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
+    "image": `https://lofigirlshop.com/cdn/shop/files/3_186ce259-9fcd-43c0-8fcd-80f191227363_1200x1200.png?v=1750420350`,
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "3:40"
@@ -115,7 +115,7 @@ export const songs: Song[] = [
     "id": 3,
     "albumId": 1,
     "title": "Skyline Serenade",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
+    "image": `https://lofigirlshop.com/cdn/shop/files/3_186ce259-9fcd-43c0-8fcd-80f191227363_1200x1200.png?v=1750420350`,
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "3:29"
@@ -124,7 +124,7 @@ export const songs: Song[] = [
     "id": 4,
     "albumId": 1,
     "title": "Urban Echoes",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
+    "image": `https://lofigirlshop.com/cdn/shop/files/3_186ce259-9fcd-43c0-8fcd-80f191227363_1200x1200.png?v=1750420350`,
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "2:11"
@@ -133,7 +133,7 @@ export const songs: Song[] = [
     "id": 5,
     "albumId": 1,
     "title": "Night's End",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
+    "image": `https://lofigirlshop.com/cdn/shop/files/3_186ce259-9fcd-43c0-8fcd-80f191227363_1200x1200.png?v=1750420350`,
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "2:26"

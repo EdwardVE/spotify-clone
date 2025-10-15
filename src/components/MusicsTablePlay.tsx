@@ -1,7 +1,8 @@
-import { type Song } from "@/lib/data"
-import { Play, Pause } from "@/icons/PlayerIcons";
+import { type Song } from "@/lib/data.ts"
+import { Play, Pause } from "@/icons/PlayerIcons.tsx";
 import { usePlayerStore, type CurrentMusic } from "@/store/playerStore.ts";
-import { getPlayListInfoById } from "@/services/ApiService";
+import { getPlayListInfoById } from "@/services/ApiService.ts";
+import type { Playlist } from "@/lib/data.ts";
 
 interface Props {
   song: Song
@@ -9,7 +10,7 @@ interface Props {
 }
 
 
-const isNewSongOfAnotherPlaylist = (currentMusic: CurrentMusic, song: Song) => {
+const isNewSongOfAnotherPlaylist = (currentMusic: CurrentMusic, song: any) => {
   return currentMusic.playlist?.id != song.albumId
 }
 
@@ -18,7 +19,7 @@ const setNewCurrentMusic = (
   song: Song,
   setIsPlaying: (isPlaying: boolean) => void,
   setCurrentMusic: (currentMusic: CurrentMusic) => void): void => {
-  getPlayListInfoById(song.albumId).then(data => {
+  getPlayListInfoById(song.albumId).then((data: { songs: any; playlist: Playlist; }) => {
     const {songs, playlist} = data
     setCurrentMusic({songs: songs, playlist: playlist, song: song})
   }).then(() => {
